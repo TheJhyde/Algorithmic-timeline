@@ -1,0 +1,16 @@
+ {
+  "name": "Twitter Algorithmic Timeline Extension",
+  "version": "456.1",
+  "description": "Reorganizes your timeline according to advance algorithms, so you only see the finest tweets.",
+  "manifest_version": 2,
+  "options_page": "options.html",
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "rearrange.js" ],
+    "matches": [ "https://twitter.com/" ]
+  }]
+}
